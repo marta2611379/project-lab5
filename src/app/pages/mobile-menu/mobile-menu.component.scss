@@ -1,0 +1,52 @@
+.drop-menu {
+    min-height: 100px;
+    margin-left: 20px;
+    // background-color:black;
+    // position:fixed;
+}
+
+.btn-drop {
+    position: absolute;
+    right: 10px;
+    top: -40px;
+}
+
+a {
+    color: rgb(245, 243, 240);
+    font-weight: 500;
+}
+
+a:hover {
+    color: rgb(245, 226, 197);
+    font-weight: 800;
+}
+
+.img-svg {
+    width: 35px;
+}
+
+.prodCount {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(189, 189, 189);
+    margin-top: -10px;
+    margin-left: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(20, 19, 19);
+    font-weight: bolder;
+    line-height: 27px;
+}
+
+.shoper {
+    position: absolute;
+    right: 5rem;
+    top: -45px;
+}
+
+.login {
+    position: absolute;
+    right: 11rem;
+    top: -40px;
+    color: floralwhite;
+}

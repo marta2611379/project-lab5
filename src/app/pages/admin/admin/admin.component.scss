@@ -1,0 +1,52 @@
+.admin-table {
+    width: 60rem;
+    margin: 0 auto;
+}
+
+.btn-block {
+    // margin: 2rem;
+    width: 100%;
+}
+
+td {
+    height: 100px;
+    overflow-y: scroll;
+}
+
+@media(max-width: 1200px) {
+    .admin-table {
+        width: 60rem;
+    }
+    .table {
+        width: 55rem;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    /* для разрешения экрана от 470 до 930 пикселей */
+    .admin-table {
+        width: 45rem;
+    }
+    .table {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+    /* для разрешения экрана от 470 до 930 пикселей */
+    .admin-table {
+        width: 30rem;
+    }
+    .table {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 479px)and (min-width: 200px) {
+    .admin-table {
+        width: 20rem;
+    }
+    .table {
+        width: 15rem;
+    }
+}

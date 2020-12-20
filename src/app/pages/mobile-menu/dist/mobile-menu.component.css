@@ -1,0 +1,50 @@
+.drop-menu {
+  min-height: 100px;
+  margin-left: 20px;
+}
+
+.btn-drop {
+  position: absolute;
+  right: 10px;
+  top: -40px;
+}
+
+a {
+  color: #f5f3f0;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #f5e2c5;
+  font-weight: 800;
+}
+
+.img-svg {
+  width: 35px;
+}
+
+.prodCount {
+  height: 30px;
+  width: 30px;
+  background-color: #bdbdbd;
+  margin-top: -10px;
+  margin-left: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: #141313;
+  font-weight: bolder;
+  line-height: 27px;
+}
+
+.shoper {
+  position: absolute;
+  right: 5rem;
+  top: -45px;
+}
+
+.login {
+  position: absolute;
+  right: 11rem;
+  top: -40px;
+  color: floralwhite;
+}

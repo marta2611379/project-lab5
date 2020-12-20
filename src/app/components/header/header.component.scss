@@ -1,0 +1,14 @@
+.navbar-brand {
+    margin: 0 2rem;
+}
+// .navbar-expand-lg {
+//     flex-wrap: none; 
+//     justify-content: flex-start;
+// }
+
+@media (min-width: 992px){
+.navbar-expand-lg {
+    // flex-wrap: wrap; 
+    // justify-content: flex-start;
+}
+}

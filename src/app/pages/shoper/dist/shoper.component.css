@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+  .shoper-cont {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  /* для разрешения экрана от 470 до 930 пикселей */
+  .shoper-cont {
+    width: 500px;
+  }
+}
+@media (max-width: 767px) and (min-width: 480px) {
+  /* для разрешения экрана от 470 до 930 пикселей */
+  .shoper-cont {
+    width: 300px;
+  }
+}
+@media (max-width: 479px) and (min-width: 200px) {
+  .shoper-cont {
+    width: 200px;
+    font-size: 8px;
+  }
+
+  .btn {
+    height: 15px;
+    width: 33px;
+    font-size: 10px;
+    padding: 0;
+  }
+}

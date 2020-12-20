@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.product-list {
+  width: 57rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  height: 5rem;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 1200px) {
+  .product-list {
+    width: 57rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  /* для разрешения экрана от 470 до 930 пикселей */
+  .shoper-cont {
+    width: 500px;
+  }
+}
+@media (max-width: 767px) and (min-width: 480px) {
+  /* для разрешения экрана от 470 до 930 пикселей */
+  .shoper-cont {
+    width: 300px;
+  }
+}
+@media (max-width: 479px) and (min-width: 200px) {
+  .shoper-cont {
+    width: 200px;
+    font-size: 8px;
+  }
+
+  .btn {
+    height: 15px;
+    width: 33px;
+    font-size: 10px;
+    padding: 0;
+  }
+}

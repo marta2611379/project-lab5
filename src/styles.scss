@@ -1,0 +1,72 @@
+    /* You can add global styles to this file, and also import other style files */
+    
+    @import "../node_modules/bootstrap/scss/bootstrap";
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    // body {
+    //     min-height: 100vh;
+    //     box-sizing: border-box;
+    //     display: flex;
+    // }
+    // app-root {
+    //     flex: 1;
+    //     display: flex;
+    //     flex-direction: column;
+    //     font-family: Verdana;
+    //     font-size: 14px;
+    // }
+    app-home,
+    app-products,
+    app-login,
+    app-admin,
+    app-shoper {
+        min-height: 92vh;
+        display: block;
+        background-color: whitesmoke;
+        padding-bottom: 10px;
+        padding-top: 10vh;
+    }
+    
+    .table {
+        margin-bottom: 0!important;
+    }
+    
+    app-menu {
+        width: 100%;
+    }
+    
+    app-mobile-menu {
+        display: none;
+    }
+    
+    @media(max-width:1200px) {
+        app-menu {
+            width: 100%;
+        }
+        // app-mobile-menu {
+        //     display: none;
+        // }
+    }
+    
+    // @media (max-width: 1200px) {
+    //     /* для разрешения экрана от 470 до 930 пикселей */
+    //     app-menu {
+    //         display: none;
+    //     }
+    //     // app-mobile-menu {
+    //     //     display: block;
+    //     // }
+    // }
+    @media (max-width: 1200px) and (min-width:220px) {
+        app-menu {
+            display: none;
+        }
+        app-mobile-menu {
+            display: block;
+            width: 100%;
+            position: relative;
+        }
+    }

@@ -1,0 +1,57 @@
+<p>login works!</p>
+<button class="btn btn-success" (click)="displayLog()">Log in</button>
+<button class="btn btn-warning" (click)="displayReg()">Registranion</button>
+
+<div class="main" *ngIf="!expressionR">
+    <div class="container">
+        <div class="sign-up-content">
+            <form method="POST" class="signup-form">
+                <div class="form-textbox">
+                    <label for="name">Full name</label>
+                    <input type="text" [(ngModel)]="name" name="name" />
+                </div>
+
+                <div class="form-textbox">
+                    <label for="email">Email</label>
+                    <input type="text" [(ngModel)]="email" name="email" />
+                </div>
+                <div class="form-textbox">
+                    <label for="login">Login</label>
+                    <input type="text" [(ngModel)]="login" name="login" />
+                </div>
+                <div class="form-textbox">
+                    <label for="password">Password</label>
+                    <input type="text" [(ngModel)]="password" name="password" />
+                </div>
+                <div class="form-textbox">
+                    <label for="tel">Phone number</label>
+                    <input type="text" [(ngModel)]="tel" name="tel" id="tel" />
+                </div>
+
+                <div class="form-textbox">
+                    <button type="submit" routerLink="/products" class="btn btn-primary" (click)="addUser()" [disabled]="!disableBtnAdd()">Create
+                        account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="main" *ngIf="expressionL">
+    <div class="container">
+        <div class="sign-up-content">
+            <form method="POST" class="signup-form">
+                <div class="form-textbox">
+                    <label for="username">Username</label>
+                    <input type="username" [(ngModel)]="loginLog" name="loginLog" />
+                </div>
+                <div class="form-textbox">
+                    <label for="pass">Password</label>
+                    <input type="password" [(ngModel)]="passwordLog" name="passwordLog" />
+                </div>
+                <div class="form-textbox">
+                    <button type="submit" class="btn btn-primary" (click)="LoginUser()" [disabled]="!disableBtnLog()">Log in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

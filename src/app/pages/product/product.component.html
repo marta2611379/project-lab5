@@ -1,0 +1,25 @@
+<!-- <p>product works!</p> -->
+<section class="product-list">
+    <!-- <button (click)="showContactPerson()">Show</button> -->
+    <div class="card m-3" style="width: 17rem; height:27rem;" *ngFor='let item of
+    products;'>
+        <img class="card-img-top" src="../assets/img3.jpg" alt="Card image cap">
+        <div class="card-body" style="height: 3rem;">
+            <h6 class="card-title"> <b>{{item.name}}</b></h6>
+            <!-- <p class="card-text ">{{item.description}}</p> -->
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item description" style="font-size: 12px;">{{item.description}}</li>
+            <li class="list-group-item">
+                <b> {{item.price}} UAH</b>
+            </li>
+        </ul>
+        <div class="card-body">
+            <button class="btn btn-block btn-secondary" (click)="localStorage(item)">Shop</button>
+            <!-- <a href="# " class="card-link ">Card link</a> -->
+        </div>
+    </div>
+    <!-- <ul >
+        <li *ngFor='let item of products;' >{{item.name}}</li>
+    </ul> -->
+</section>

@@ -1,0 +1,12 @@
+app-header {
+  height: 6vh;
+}
+
+app-footer {
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  display: block;
+  color: white;
+  text-align: center;
+}

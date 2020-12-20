@@ -1,0 +1,26 @@
+<!-- <p>shoper works!</p> -->
+<div class="shoper-cont">
+    <table class="table table-responsive">
+        <thead class="thead-light ">
+            <tr>
+                <th scope="col ">#</th>
+                <th scope="col ">Name</th>
+                <!-- <th scope="col ">Description</th> -->
+                <th scope="col ">Price</th>
+                <th scope="col ">Counter</th>
+                <th scope="col ">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of products; index as i; ">
+                <th scope="row ">{{i+1}}</th>
+                <td>{{p.product.name}}</td>
+                <td>{{p.product.price}} UAH</td>
+                <td>{{p.count}}</td>
+                <td>
+                    <button type="button " class="btn btn-danger btn-small " (click)="deleteFromShoper(p.product._id) ">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
